@@ -5,9 +5,9 @@ class Layout extends Component {
 
     render () {
         return (
-            <React.Fragment>
+            <div>
                 {this.props.children}
-            </React.Fragment>
+            </div>
         )    
     }
 }
