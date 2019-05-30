@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Layout from './components/Layout/layout';
-import SummaryBox from './components/SummaryBox/SummaryBox';
+import SummaryBox from './components/SummaryItem/SummaryItem';
 import Posts from './components/Posts/Posts';
 
 function App() {
