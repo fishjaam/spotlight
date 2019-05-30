@@ -1,19 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import './App.css';
 import Layout from './components/Layout/layout';
-import SummaryBox from './components/SummaryItem/SummaryItem';
-import Posts from './components/Posts/Posts';
+import Posts from './containers/Posts/Posts';
 
-function App() {
+class App extends Component {
 
-  return (
-    <div className="App">
-      <Layout>
-        <Posts />
-      </Layout>
-    </div>
-  );
+  
+
+  render () {
+    return (
+      <div className="App">
+        <Layout>
+          <Posts />
+        </Layout>
+      </div>
+    )
+  }
+  
 }
 
 export default App;
