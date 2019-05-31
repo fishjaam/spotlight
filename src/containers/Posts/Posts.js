@@ -28,7 +28,9 @@ class Posts extends Component {
                         amount={post.amount}
                         username={post.username}
                         link={post.link}
-                        key={post.postID}></SummaryItem>
+                        key={post.postID}
+                        postID={post.postID}
+                        props={this.props}></SummaryItem>
                 })}
             </div>
         ) 

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 const postDetail = props => {
 
@@ -9,4 +10,10 @@ const postDetail = props => {
     )    
 }
 
-export default postDetail;
+const mapStateToProps = state => {
+    return {
+        posts: state.posts
+    }
+}
+
+export default connect(mapStateToProps)(postDetail);
