@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 const header = props => (
     <header className={styles.Header}>
         <nav>
-            hi
+            Home | Submit | Archive
         </nav>
     </header>
 )
