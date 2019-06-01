@@ -13,7 +13,7 @@ class App extends Component {
   render () {
     let routes = (
       <Switch>
-        <Route path="/detail" component={PostDetail}/>
+        <Route path="/detail/:id" component={PostDetail}/>
         <Route path="/" component={Posts}/>
       </Switch>
     )
