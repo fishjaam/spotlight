@@ -25,11 +25,3 @@
 .NavItem {
     text-decoration: none;
 }
-
-.List,
-.List a {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    color: white;
-}

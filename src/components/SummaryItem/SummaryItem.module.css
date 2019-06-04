@@ -19,6 +19,20 @@
     }
 }
 
+.Archive {
+    text-align: center;
+    background-color: #282c34;
+    border: 2px solid rgb(6, 5, 65);
+    box-shadow: 1px 1px 5px rgb(2, 1, 22);
+    padding: 0px 15px;
+    top: 10%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 10px 25px;
+    transition: all 0.3s ease-out;
+    font-size: 12px;
+}
+
 .Detail {
     text-align: left;
     color: #e9e9e9;
@@ -34,5 +48,6 @@
 
 .Title {
     padding: 8px 0px;
+    font-size: 13px;
     color: #e9e9e9;
 }

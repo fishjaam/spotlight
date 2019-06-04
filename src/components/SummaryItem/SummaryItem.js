@@ -14,8 +14,8 @@ const SummaryItem = props => {
 
     return (
         <Link to={'detail/' + props.postID}>
-            <div className={styles.SummaryBox}>
-                <p className={styles.Title}>title: {props.title}</p>
+            <div className={props.home ? styles.SummaryBox : styles.Archive}>
+                <p className={styles.Title}>{props.title}</p>
 
                 <p className={styles.Description}>{props.description}</p>
                 <p className={styles.Detail}>{props.age}  |  {props.location}</p>

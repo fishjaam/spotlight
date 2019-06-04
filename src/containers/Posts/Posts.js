@@ -7,7 +7,8 @@ import * as actions from '../../store/actions/postActions';
 
 class Posts extends Component {
     state = {
-        posts: []
+        posts: [],
+        frontPageLimit: 5
     }
 
     componentDidMount() {
@@ -15,11 +16,27 @@ class Posts extends Component {
     }
 
     render () {
+        let posts = this.props.posts.map(post => {
+            return <SummaryItem
+                home={true}
+                title={post.title}
+                description={post.description}
+                age={post.age}
+                location={post.location}
+                amount={post.amount}
+                username={post.username}
+                link={post.link}
+                key={post.postID}
+                postID={post.postID}
+                props={this.props}></SummaryItem>
+        }).slice(0, this.state.frontPageLimit);
 
         return (
             <div className={styles.grid}>
-                {this.props.posts.map(post => {
+                {posts}
+                {/* {this.props.posts.map(post => {
                     return <SummaryItem
+                        home={true}
                         title={post.title}
                         description={post.description}
                         age={post.age}
@@ -30,7 +47,7 @@ class Posts extends Component {
                         key={post.postID}
                         postID={post.postID}
                         props={this.props}></SummaryItem>
-                })}
+                })} */}
             </div>
         ) 
     }

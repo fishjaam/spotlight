@@ -5,6 +5,7 @@ import './App.css';
 import Layout from './components/Layout/layout';
 import Posts from './containers/Posts/Posts';
 import PostDetail from './components/PostDetail/PostDetail';
+import Archive from './containers/Archive/Archive';
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
     let routes = (
       <Switch>
         <Route path="/detail/:id" component={PostDetail}/>
+        <Route path="/archive" component={Archive}/>
         <Route path="/" component={Posts}/>
       </Switch>
     )

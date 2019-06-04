@@ -5,7 +5,9 @@ import {NavLink} from 'react-router-dom';
 const header = props => (
     <header className={styles.Header}>
         <div>
-            <NavLink className={styles.NavItem}>
+            <NavLink 
+                className={styles.NavItem}
+                to="/">
                 Home
             </NavLink>
         </div>
@@ -14,7 +16,9 @@ const header = props => (
                 Submit
             </NavLink>
             {' | '}
-            <NavLink className={styles.NavItem}>
+            <NavLink 
+                className={styles.NavItem}
+                to="/archive">
                 Archive
             </NavLink>
         </div> 
