@@ -16,12 +16,12 @@ const postDetail = props => {
 
             <hr style={{borderColor: '#c49283', margin: '25px 6px'}}></hr>
 
-            <p>{displayPost.description}</p>
-            <p>{displayPost.age}</p>
-            <p>{displayPost.amount}</p>
-            <p>{displayPost.location}</p>
-            <p>{displayPost.username}</p>
-            <p>{displayPost.link}</p>
+            <p>Description: <br></br>{displayPost.description}</p>
+            <p>Age: {displayPost.age}</p>
+            <p>Amount: ${displayPost.amount}</p>
+            <p>Location: {displayPost.location}</p>
+            <p>Username: {displayPost.username}</p>
+            <p>Link: {displayPost.link}</p>
         </div>
     )    
 }

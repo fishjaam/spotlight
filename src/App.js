@@ -6,6 +6,7 @@ import Layout from './components/Layout/layout';
 import Posts from './containers/Posts/Posts';
 import PostDetail from './components/PostDetail/PostDetail';
 import Archive from './containers/Archive/Archive';
+import Submit from './components/submit/submit';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
       <Switch>
         <Route path="/detail/:id" component={PostDetail}/>
         <Route path="/archive" component={Archive}/>
+        <Route path="/submit" component={Submit}/>
         <Route path="/" component={Posts}/>
       </Switch>
     )

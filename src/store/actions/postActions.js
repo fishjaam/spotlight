@@ -26,6 +26,7 @@ export const fetchPosts = () => {
         
         axios.get('https://spotlight-56407.firebaseio.com/posts.json')
             .then(res => {
+                console.log(res)
                 const fetchedPosts = [];
                 for(let post in res.data){
                     fetchedPosts.push({

@@ -8,7 +8,7 @@ import * as actions from '../../store/actions/postActions';
 class Posts extends Component {
     state = {
         posts: [],
-        frontPageLimit: 5
+        frontPageLimit: 11
     }
 
     componentDidMount() {

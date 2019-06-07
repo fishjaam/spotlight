@@ -12,7 +12,9 @@ const header = props => (
             </NavLink>
         </div>
         <div>
-            <NavLink className={styles.NavItem}>
+            <NavLink 
+                className={styles.NavItem}
+                to="submit">
                 Submit
             </NavLink>
             {' | '}

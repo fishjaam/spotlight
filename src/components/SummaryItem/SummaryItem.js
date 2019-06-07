@@ -11,7 +11,6 @@ const SummaryItem = props => {
     //     const queryParams = props.postID;
     //     props.props.history.push('/detail') //add query param for ID to load specific post
     // }
-
     return (
         <Link to={'detail/' + props.postID}>
             <div className={props.home ? styles.SummaryBox : styles.Archive}>
@@ -19,8 +18,7 @@ const SummaryItem = props => {
 
                 <p className={styles.Description}>{props.description}</p>
                 <p className={styles.Detail}>{props.age}  |  {props.location}</p>
-                <p className={styles.Detail}>{props.amount}</p>
-                <p className={styles.Detail}>{props.username}</p>
+                <p className={styles.Detail}>${props.amount}</p>
                 <p className={styles.Detail}>{props.link}</p>
             </div>
         </Link>
